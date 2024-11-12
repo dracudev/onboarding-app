@@ -61,6 +61,7 @@ This project involves building a digital onboarding application using React. The
 - Bootstrap 5
 - React-Bootstrap
 - ESLint
+- Styled Components
 
 <br>
 
@@ -70,6 +71,7 @@ This project involves building a digital onboarding application using React. The
 - **React** and **React-DOM** for component-based UI
 - **Bootstrap 5** and **React-Bootstrap** for styling and responsive design
 - **Node.js**
+- **Styled Components**
 
 <br>
 
