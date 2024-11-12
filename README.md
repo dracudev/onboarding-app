@@ -4,11 +4,17 @@
 
 This project involves building a digital onboarding application using React. The app will present a sequence of instructional messages or steps, accompanied by images, allowing users to navigate forward or backward through the onboarding screens. Each screen displays only one step at a time, enhancing the user experience by breaking down information into manageable parts.
 
+<p>
+  <img width="60%" src="src/assets/onboardingApp.png" alt="onboardingApp">
+</p>
+
+
 ### Objectives
 
 - Apply foundational React concepts such as components, hooks, and props.
 - Use Bootstrap 5 for responsive design.
 - Style components using Styled Components for customizable and scoped styling.
+
 
 <br>
 
