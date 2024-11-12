@@ -1,6 +1,7 @@
 import "./CustomCard.css";
 import Card from "react-bootstrap/Card";
 import arrowRight from "../assets/arrowRight.webp";
+import arrowLeft from "../assets/arrowLeft.svg";
 
 export function CustomCard({
   title,
@@ -8,7 +9,9 @@ export function CustomCard({
   bgColor,
   image,
   nextStep,
+  prevStep,
   step,
+  dataLength
 }) {
   return (
     <Card className="card">
@@ -31,9 +34,14 @@ export function CustomCard({
               ></div>
             ))}
           </div>
-          <button className="cardButton" onClick={nextStep}>
+          <div className="cardButton">
+          <button className={`${step === 0 ? "dNone" : ""}`} onClick={prevStep}>
+            <img src={arrowLeft} alt="Left arrow" />
+          </button>
+          <button className={`${step == dataLength - 1 ? "dNone" : ""}`} onClick={nextStep}>
             <img src={arrowRight} alt="Right arrow" />
           </button>
+          </div>
         </div>
       </Card.Body>
     </Card>

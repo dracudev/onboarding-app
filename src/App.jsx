@@ -28,10 +28,16 @@ export default function App() {
       image: meditationImage
     }
   ]
+  const dataLength = tutorialData.length;
   
   function nextStep() {
-    setStep((prevStep) => (prevStep + 1) % tutorialData.length);
+    setStep((currentStep) => (currentStep + 1));
   }
+
+  function prevStep() {
+    setStep((currentStep) => (currentStep - 1));
+  }
+
 
 
   return (
@@ -41,7 +47,9 @@ export default function App() {
       bgColor={tutorialData[step].bgColor} 
       image={tutorialData[step].image} 
       nextStep={nextStep}
+      prevStep={prevStep}
       step={step}
+      dataLength={dataLength}
     />
   )
   
