@@ -2,7 +2,7 @@ import "./CustomCard.css";
 import Card from "react-bootstrap/Card";
 import arrowRight from "../assets/arrowRight.webp";
 import arrowLeft from "../assets/arrowLeft.svg";
-import {Indicator} from "./Indicator"
+import { Indicator } from "./Indicator";
 
 export function CustomCard({
   title,
@@ -12,7 +12,7 @@ export function CustomCard({
   nextStep,
   prevStep,
   step,
-  dataLength
+  dataLength,
 }) {
   return (
     <Card className="card">
@@ -27,17 +27,20 @@ export function CustomCard({
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className="cardFooter">
-          <Indicator 
-          step={step}
-          dataLength={dataLength}
-          />
+          <Indicator step={step} dataLength={dataLength} />
           <div className="cardButton">
-          <button className={`${step === 0 ? "dNone" : ""}`} onClick={prevStep}>
-            <img src={arrowLeft} alt="Left arrow" />
-          </button>
-          <button className={`${step == dataLength - 1 ? "dNone" : ""}`} onClick={nextStep}>
-            <img src={arrowRight} alt="Right arrow" />
-          </button>
+            <button
+              className={`${step === 0 ? "dNone" : ""}`}
+              onClick={prevStep}
+            >
+              <img src={arrowLeft} alt="Left arrow" />
+            </button>
+            <button
+              className={`${step == dataLength - 1 ? "dNone" : ""}`}
+              onClick={nextStep}
+            >
+              <img src={arrowRight} alt="Right arrow" />
+            </button>
           </div>
         </div>
       </Card.Body>
