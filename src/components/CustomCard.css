@@ -40,24 +40,3 @@
 .dNone {
     display: none;
 }
-
-.dotsContainer {
-    display: flex;
-    align-self: center;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: gray;
-    border-radius: 50%;
-    margin: 0 5px;
-    transition: width 0.3s, height 0.3s;
-}
-
-.dot.active {
-    width: 20px;
-    height: 10px;
-    background-color: black;
-    border-radius: 5px;
-}

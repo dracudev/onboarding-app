@@ -2,6 +2,7 @@ import "./CustomCard.css";
 import Card from "react-bootstrap/Card";
 import arrowRight from "../assets/arrowRight.webp";
 import arrowLeft from "../assets/arrowLeft.svg";
+import {Indicator} from "./Indicator"
 
 export function CustomCard({
   title,
@@ -26,14 +27,10 @@ export function CustomCard({
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className="cardFooter">
-          <div className="dotsContainer">
-            {[0, 1, 2].map((index) => (
-              <div
-                key={index}
-                className={`dot ${index === step ? "active" : ""}`}
-              ></div>
-            ))}
-          </div>
+          <Indicator 
+          step={step}
+          dataLength={dataLength}
+          />
           <div className="cardButton">
           <button className={`${step === 0 ? "dNone" : ""}`} onClick={prevStep}>
             <img src={arrowLeft} alt="Left arrow" />
