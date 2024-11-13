@@ -19,7 +19,7 @@ export function CustomCard({
 
   const [animationClass, setAnimationClass] = useState('');
 
-  const handleNextStep = () => {
+  const AnimatedNextStep = () => {
     setAnimationClass('card-out-next');
     setTimeout(() => {
       nextStep();
@@ -27,7 +27,7 @@ export function CustomCard({
     }, 700);
   };
 
-  const handlePrevStep = () => {
+  const AnimatedPrevStep = () => {
     setAnimationClass('card-out-prev');
     setTimeout(() => {
       prevStep();
@@ -57,13 +57,13 @@ export function CustomCard({
           <div className="cardButton">
             <button
               className={`${step === 0 ? "dNone" : ""}`}
-              onClick={handlePrevStep}
+              onClick={AnimatedPrevStep}
             >
               <img src={arrowLeft} alt="Left arrow" />
             </button>
             <button
               className={`${step == dataLength - 1 ? "dNone" : ""}`}
-              onClick={handleNextStep}
+              onClick={AnimatedNextStep}
             >
               <img src={arrowRight} alt="Right arrow" />
             </button>
