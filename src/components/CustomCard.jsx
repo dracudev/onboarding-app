@@ -12,6 +12,7 @@ export function CustomCard({
   nextStep,
   prevStep,
   step,
+  setStep,
   dataLength,
 }) {
   return (
@@ -27,7 +28,11 @@ export function CustomCard({
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className="cardFooter">
-          <Indicator step={step} dataLength={dataLength} />
+          <Indicator 
+          step={step} 
+          dataLength={dataLength} 
+          setStep={setStep}
+          />
           <div className="cardButton">
             <button
               className={`${step === 0 ? "dNone" : ""}`}

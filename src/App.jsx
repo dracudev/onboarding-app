@@ -51,6 +51,7 @@ export default function App() {
       prevStep={prevStep}
       step={step}
       dataLength={dataLength}
+      setStep={setStep}
     />
   );
 }

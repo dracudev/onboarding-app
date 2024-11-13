@@ -21,11 +21,16 @@ const Dot = styled.div`
   }
 `;
 
-export function Indicator({ step, dataLength }) {
+export function Indicator({ step, dataLength, setStep }) {
+
+  function goToDot(index) {
+    setStep(index)
+  }
+
   return (
     <DotsContainer>
       {Array.from({ length: dataLength }).map((_, index) => (
-        <Dot key={index} className={index === step ? "active" : ""} />
+        <Dot key={index} className={index === step ? "active" : ""} onClick={() => goToDot(index)} />
       ))}
     </DotsContainer>
   );
