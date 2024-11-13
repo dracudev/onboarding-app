@@ -1,43 +1,103 @@
 .card {
-    width: 20rem;
-    height: 50rem;
-    border-radius: 15px !important;
-    border: none !important;
-    img {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
+  width: 20rem;
+  height: 50rem;
+  border-radius: 15px !important;
+  border: none !important;
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 }
 
 .cardImage {
-    height: 25rem;
+  height: 25rem;
 }
 
-.cardBody{
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.cardBody {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cardFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
-.cardButton { 
-    margin-top: auto;
-    img {
-        width: 2.5rem;
-    }
-    button {
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
-    }
+.cardButton {
+  margin-top: auto;
+  img {
+    width: 2.5rem;
+  }
+  button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
 }
 
 .dNone {
-    display: none;
+  display: none;
+}
+
+@keyframes slideOut-next {
+  from {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+}
+
+@keyframes slideIn-next {
+  from {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes slideOut-prev {
+  from {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+}
+
+@keyframes slideIn-prev {
+  from {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+.card-out-next {
+  animation: slideOut-next 0.7s forwards;
+}
+
+.card-in-next {
+  animation: slideIn-next 0.7s forwards;
+}
+
+.card-out-prev {
+  animation: slideOut-prev 0.7s forwards;
+}
+
+.card-in-prev {
+  animation: slideIn-prev 0.7s forwards;
 }
