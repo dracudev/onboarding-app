@@ -10,23 +10,23 @@ export default function App() {
 
   const tutorialData = [
     {
-      title: "Dedica moltes hores",
+      title: "Dedicate many hours",
       description:
-        "Un mínim de 30 hores a la setmana. No en tens prou, harás de dedicar-li més hores. Al principi sembla impossible, però notarás una millora ràpidament.",
+        "A minimum of 30 hours a week. It's not enough, you'll have to dedicate more hours to it. At first it seems impossible, but you'll notice an improvement quickly.",
       bgColor: "#4da2a9",
       image: timeManagementImage,
     },
     {
-      title: "Programa projectes propis",
+      title: "Program own projects",
       description:
-        "Més val 10 hores treballan en projectes propis, que 10 hores mirant tutorials. La motivació y la implicació en el porjecte ajudará a accelerar el teu aprenentatge.",
+        "10 hours working on your own projects is better than 10 hours watching tutorials. Motivation and involvement in the project will help speed up your learning.",
       bgColor: "#d3d4d9",
       image: programmingImage,
     },
     {
-      title: "Procura descansar",
+      title: "Try to rest",
       description:
-        "Descansar bé i desconectar són vitals. D'aquesta manera reduirás l'estrès i l'ansietat. Millorarás la teva concentració i consolidarás el teu aprenentatge.",
+        "Getting a good rest and disconnecting are vital. This way you will reduce stress and anxiety. You will improve your concentration and consolidate your learning.",
       bgColor: "#ffd167",
       image: meditationImage,
     },
