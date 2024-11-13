@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { CustomCard } from "./components/customCard";
 import meditationImage from "./assets/meditation.svg";
 import programmingImage from "./assets/programming.svg";
