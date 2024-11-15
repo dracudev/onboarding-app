@@ -1,7 +1,7 @@
 import "./CustomCard.css";
 import Card from "react-bootstrap/Card";
-import arrowRight from "../assets/arrowRight.webp";
-import arrowLeft from "../assets/arrowLeft.svg";
+import arrowRight from "/assets/arrowRight.webp";
+import arrowLeft from "/assets/arrowLeft.svg";
 import { Indicator } from "./Indicator";
 import { useState } from "react";
 
@@ -14,24 +14,23 @@ export function CustomCard({
   prevStep,
   step,
   setStep,
-  dataLength,
+  tutorialData
 }) {
-
-  const [animationClass, setAnimationClass] = useState('');
+  const [animationClass, setAnimationClass] = useState("");
 
   const AnimatedNextStep = () => {
-    setAnimationClass('card-out-next');
+    setAnimationClass("card-out-next");
     setTimeout(() => {
       nextStep();
-      setAnimationClass('card-in-next');
+      setAnimationClass("card-in-next");
     }, 700);
   };
 
   const AnimatedPrevStep = () => {
-    setAnimationClass('card-out-prev');
+    setAnimationClass("card-out-prev");
     setTimeout(() => {
       prevStep();
-      setAnimationClass('card-in-prev');
+      setAnimationClass("card-in-prev");
     }, 700);
   };
 
@@ -48,11 +47,11 @@ export function CustomCard({
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className="cardFooter">
-          <Indicator 
-          step={step} 
-          dataLength={dataLength} 
-          setStep={setStep}
-          setAnimationClass={setAnimationClass}
+          <Indicator
+            step={step}
+            tutorialData={tutorialData}
+            setStep={setStep}
+            setAnimationClass={setAnimationClass}
           />
           <div className="cardButton">
             <button
@@ -62,7 +61,7 @@ export function CustomCard({
               <img src={arrowLeft} alt="Left arrow" />
             </button>
             <button
-              className={`${step == dataLength - 1 ? "dNone" : ""}`}
+              className={`${step == tutorialData.length - 1 ? "dNone" : ""}`}
               onClick={AnimatedNextStep}
             >
               <img src={arrowRight} alt="Right arrow" />

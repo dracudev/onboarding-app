@@ -23,32 +23,32 @@ const Dot = styled.div`
   }
 `;
 
-export function Indicator({ step, dataLength, setStep, setAnimationClass }) {
-
+export function Indicator({ step, tutorialData, setStep, setAnimationClass }) {
   function goToDot(index, step) {
-    if (step === index)
-      return;
-    if (step < index){
-      setAnimationClass('card-out-next');
+    if (step === index) return;
+    if (step < index) {
+      setAnimationClass("card-out-next");
       setTimeout(() => {
-      setStep(index);
-      setAnimationClass('card-in-next');
-    }, 700);
-    }
-    else {
-      setAnimationClass('card-out-prev');
+        setStep(index);
+        setAnimationClass("card-in-next");
+      }, 700);
+    } else {
+      setAnimationClass("card-out-prev");
       setTimeout(() => {
-      setStep(index);
-      setAnimationClass('card-in-prev');
-    }, 700);
+        setStep(index);
+        setAnimationClass("card-in-prev");
+      }, 700);
     }
-    
   }
 
   return (
     <DotsContainer>
-      {Array.from({ length: dataLength }).map((_, index) => (
-        <Dot key={index} className={index === step ? "active" : ""} onClick={() => goToDot(index, step)} />
+      {tutorialData.map((_, index) => (
+        <Dot
+          key={index}
+          className={index === step ? "active" : ""}
+          onClick={() => goToDot(index, step)}
+        />
       ))}
     </DotsContainer>
   );

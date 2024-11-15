@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Dedicate many hours",
+      "description": "A minimum of 30 hours a week. It's not enough, you'll have to dedicate more hours to it. At first it seems impossible, but you'll notice an improvement quickly.",
+      "bgColor": "#4da2a9",
+      "image": "/assets/time_managment.svg"
+    },
+    {
+      "title": "Program own projects",
+      "description": "10 hours working on your own projects is better than 10 hours watching tutorials. Motivation and involvement in the project will help speed up your learning.",
+      "bgColor": "#d3d4d9",
+      "image": "/assets/programming.svg"
+    },
+    {
+      "title": "Try to rest",
+      "description": "Getting a good rest and disconnecting are vital. This way you will reduce stress and anxiety. You will improve your concentration and consolidate your learning.",
+      "bgColor": "#ffd167",
+      "image": "/assets/meditation.svg"
+    }
+  ]
