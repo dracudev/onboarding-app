@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CustomCard } from "./components/customCard";
+import { CustomCard } from "./components/CustomCard";
 import tutorialData from "./data/tutorialData.json";
 
 export default function App() {
