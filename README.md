@@ -57,12 +57,13 @@ This project involves building a digital onboarding application using React. The
 
 ## 💻 Technologies Used
 
-- **React 18**: A JavaScript library for building user interfaces.
-- **Vite**: A fast development server and build tool.
-- **Bootstrap 5**: A CSS framework for responsive design.
-- **React-Bootstrap**: React components built for Bootstrap.
-- **Styled Components**: CSS-in-JS library for scoped and dynamic styling.
-- **ESLint**: A tool for identifying and fixing JavaScript code issues.
+- **Vite** for development and building.
+- **React** and **React-DOM** for creating component-based UI.
+- **Bootstrap 5** and **React-Bootstrap** for responsive styling.
+- **Styled Components** for scoped and dynamic styling.
+- **PropTypes** for runtime type checking of props.
+- **Node.js** and npm/yarn for dependency management.
+- **ESLint** for code quality and linting.
 
 <br>
 
