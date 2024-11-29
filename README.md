@@ -4,11 +4,6 @@
 
 This project involves building a digital onboarding application using React. The app will present a sequence of instructional messages or steps, accompanied by images, allowing users to navigate forward or backward through the onboarding screens. Each screen displays only one step at a time, enhancing the user experience by breaking down information into manageable parts.
 
-<p>
-  <img width="60%" src="public/assets/onboardingApp.png" alt="onboardingApp">
-</p>
-
-
 ### Objectives
 
 - Apply foundational React concepts such as components, hooks, and props.
@@ -20,7 +15,7 @@ This project involves building a digital onboarding application using React. The
 
 ## 📐 Project Structure
 
-### Level 1
+### ⭐ Level 1
 
 - **Exercise 1**: Initialize the project by setting up the main `Card` component:
   - Create a `Card` component to display each onboarding step.
@@ -47,12 +42,12 @@ This project involves building a digital onboarding application using React. The
   - Load `Indicator` within `Card` and pass the total steps and current step as props.
   - Use `.map` to render step indicators, highlighting the active step with styled components.
 
-### Level 2
+### ⭐⭐ Level 2
 
 - **Exercise 6**: Enable clickable navigation on each indicator:
   - On clicking an indicator dot, display the corresponding step content in `Card`.
 
-### Level 3
+### ⭐⭐⭐ Level 3
 
 - **Exercise 7**: Add transition animations between steps:
   - Implement animations to slide the image out to the left and the next one in from the right.
@@ -62,22 +57,22 @@ This project involves building a digital onboarding application using React. The
 
 ## 💻 Technologies Used
 
-- React
-- Vite
-- Bootstrap 5
-- React-Bootstrap
-- ESLint
-- Styled Components
+- **Vite** for development and building.
+- **React** and **React-DOM** for creating component-based UI.
+- **Bootstrap 5** and **React-Bootstrap** for responsive styling.
+- **Styled Components** for scoped and dynamic styling.
+- **PropTypes** for runtime type checking of props.
+- **Node.js** and npm/yarn for dependency management.
+- **ESLint** for code quality and linting.
 
 <br>
 
 ## 📋 Requirements
 
-- **Vite** for development and building
-- **React** and **React-DOM** for component-based UI
-- **Bootstrap 5** and **React-Bootstrap** for styling and responsive design
-- **Node.js**
-- **Styled Components**
+- **Node.js 16 or newer**: JavaScript runtime for executing the project.
+- **npm** or **yarn**: Package manager to install dependencies.
+- **A modern web browser**: Required to run the application.
+- **Vite**: Preconfigured as part of the project for development and build processes.
 
 <br>
 
